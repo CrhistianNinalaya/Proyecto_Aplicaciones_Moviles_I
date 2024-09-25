@@ -1,0 +1,4 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/black" /> <!-- Color de fondo -->
+    <corners android:bottomLeftRadius="18dp" android:bottomRightRadius="18dp" /> <!-- Radio de las esquinas inferiores -->
+</shape>
