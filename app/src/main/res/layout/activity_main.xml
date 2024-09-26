@@ -54,7 +54,7 @@
         android:textColor="@color/white"
         android:text="EMPLEADOS"
         android:paddingHorizontal="100sp"
-        android:background="#d98880"/>
+        android:background="#FF0000"/>
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnPedido"

@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:id="@+id/login"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="#bfc9ca"
+    android:background="#ccd1d1"
     tools:context=".MainActivity">
     <ImageView
         android:id="@+id/imgLogin"
@@ -76,8 +76,23 @@
         android:paddingHorizontal="70sp"
         android:layout_marginTop="60sp"
         android:text="ENTRAR"
-        android:background="#e74c3c"
+        android:background="#FF0000"
         android:textColor="@color/white"
         />
-
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/marca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DANARA"
+        android:layout_marginHorizontal="15sp"
+        android:fontFamily="serif"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:padding="40sp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/fondo_marca"
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>
