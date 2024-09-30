@@ -1,12 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/newproducto"
+    android:id="@+id/newpersona"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#bfc9ca"
     tools:context=".MainActivity">
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/marca2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15sp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/fondo_marca"
+        android:fontFamily="serif"
+        android:padding="40sp"
+        android:text="DANARA"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/lblTitulo"
@@ -16,7 +35,7 @@
         android:layout_marginTop="4dp"
         android:background="@drawable/round_borders_bottom_black"
         android:paddingVertical="20sp"
-        android:text="NUEVO PRODUCTO"
+        android:text="REGISTRO DE PERSONAS"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="20sp"
@@ -47,27 +66,27 @@
         app:layout_constraintTop_toBottomOf="@+id/lblNombre" />
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/lblDescripcion"
+        android:id="@+id/lblApellido"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10sp"
         android:layout_marginTop="30sp"
-        android:text="Descripción:"
+        android:text="Apellido:"
         android:textSize="17sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/inputNombre" />
 
     <androidx.appcompat.widget.AppCompatEditText
-        android:id="@+id/inputDescripcion"
+        android:id="@+id/inputApellido"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="10sp"
         android:layout_marginTop="10sp"
         android:background="@drawable/round_borders"
-        android:hint="Ingresar descripcion del producto"
+        android:hint="Ingresar Apellido"
         android:padding="05sp"
         android:textSize="15sp"
-        app:layout_constraintTop_toBottomOf="@+id/lblDescripcion" />
+        app:layout_constraintTop_toBottomOf="@+id/lblApellido" />
 
     <TableLayout
         android:id="@+id/inputGroup"
@@ -75,100 +94,91 @@
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/inputDescripcion">
+        app:layout_constraintTop_toBottomOf="@id/inputApellido">
 
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/lblPrecio"
+                android:id="@+id/lblEdad"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10sp"
+                android:layout_marginStart="5dp"
                 android:layout_marginTop="30sp"
-                android:text="Precio:"
+                android:text="Edad:"
                 android:textSize="17sp"
                 app:layout_constraintStart_toStartOf="parent" />
 
             <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/lblStock"
+                android:id="@+id/lblCorreo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10sp"
+                android:layout_marginStart="50dp"
                 android:layout_marginTop="30sp"
-                android:text="Stock:"
+                android:text="Correo:"
                 android:textSize="17sp"
                 app:layout_constraintStart_toStartOf="parent" />
 
-            <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/lblGrosor"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10sp"
-                android:layout_marginTop="30sp"
-                android:text="Grosor de tela:"
-                android:textSize="17sp"
-                app:layout_constraintStart_toStartOf="parent" />
+
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center"
-            android:layout_marginHorizontal="10sp">
+            android:layout_marginHorizontal="5sp">
 
             <androidx.appcompat.widget.AppCompatEditText
-                android:id="@+id/inputPrecio"
+                android:id="@+id/inputEdad"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10sp"
                 android:background="@drawable/round_borders"
-                android:hint=" Ingresar precio "
+                android:hint=" Ingresar Edad "
                 android:padding="05sp"
-                android:textSize="15sp" />
+                android:textSize="17sp" />
 
             <androidx.appcompat.widget.AppCompatEditText
-                android:id="@+id/inputStock"
-                android:layout_width="match_parent"
+                android:id="@+id/inputCorreo"
+                android:layout_width="222dp"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="05sp"
+                android:layout_marginHorizontal="35sp"
                 android:layout_marginTop="10sp"
                 android:background="@drawable/round_borders"
-                android:hint=" Ingresar unidades "
+                android:hint=" Ingresar Correo "
                 android:padding="05sp"
-                android:textSize="15sp" />
+                android:textSize="17sp" />
 
-            <androidx.appcompat.widget.AppCompatEditText
-                android:id="@+id/inputGrosor"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10sp"
-                android:background="@drawable/round_borders"
-                android:hint=" Ingresar grosor "
-                android:padding="05sp"
-                android:textSize="15sp" />
+
         </TableRow>
     </TableLayout>
 
+
+
+
+
+
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/lblTalla"
+        android:id="@+id/lblGenero"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10sp"
         android:layout_marginTop="30sp"
-        android:text="Tallas disponibles:"
+        android:text="Genero:"
         android:textSize="17sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/inputGroup" />
 
+
+
     <TableLayout
-        android:id="@+id/checkTalla"
+        android:id="@+id/checkGenero"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lblTalla">
+        app:layout_constraintTop_toBottomOf="@+id/lblGenero">
 
         <TableRow
             android:layout_width="match_parent"
@@ -176,62 +186,25 @@
             android:gravity="center">
 
             <CheckBox xmlns:android="http://schemas.android.com/apk/res/android"
-                android:id="@+id/checkXS"
+                android:id="@+id/checkMasculico"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="XS"
-                android:textSize="17sp"
+                android:text="Masculino"
+                android:textSize="18sp"
                 app:layout_constraintStart_toStartOf="parent" />
 
             <CheckBox xmlns:android="http://schemas.android.com/apk/res/android"
-                android:id="@+id/checkS"
+                android:id="@+id/checkFemenido"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="S"
-                android:textSize="17sp"
+                android:text="Femenido"
+                android:textSize="18sp"
                 app:layout_constraintStart_toStartOf="parent" />
 
-            <CheckBox xmlns:android="http://schemas.android.com/apk/res/android"
-                android:id="@+id/checkM"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="M"
-                android:textSize="17sp"
-                app:layout_constraintStart_toStartOf="parent" />
 
-            <CheckBox xmlns:android="http://schemas.android.com/apk/res/android"
-                android:id="@+id/checkL"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="L"
-                android:textSize="17sp"
-                app:layout_constraintStart_toStartOf="parent" />
-
-            <CheckBox xmlns:android="http://schemas.android.com/apk/res/android"
-                android:id="@+id/checkXL"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="XL"
-                android:textSize="17sp"
-                app:layout_constraintStart_toStartOf="parent" />
         </TableRow>
     </TableLayout>
 
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/marca"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="15sp"
-        android:background="@drawable/fondo_marca"
-        android:fontFamily="serif"
-        android:padding="40sp"
-        android:text="DANARA"
-        android:textColor="@color/white"
-        android:textSize="13sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnGuardar"
@@ -244,33 +217,8 @@
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkTalla" />
+        app:layout_constraintTop_toBottomOf="@+id/checkGenero" />
 
-    <androidx.constraintlayout.widget.Group
-        android:id="@+id/group"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
 
-    <androidx.constraintlayout.helper.widget.Flow
-        android:id="@+id/flow"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
 
-    <androidx.constraintlayout.widget.Group
-        android:id="@+id/group2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="20dp" />
-
-    <androidx.constraintlayout.widget.Barrier
-        android:id="@+id/barrier"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:barrierDirection="top" />
 </androidx.constraintlayout.widget.ConstraintLayout>
