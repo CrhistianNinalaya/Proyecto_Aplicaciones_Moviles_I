@@ -19,3 +19,21 @@ gradle-app.setting
 .project
 # JDT-specific (Eclipse Java Development Tools)
 .classpath
+
+local.properties
+
+# Ignore files of Android Studio
+.idea/
+*.iml
+*.iws
+*.ipr
+
+#Ignore files cache
+.idea/caches/
+.idea/libraries/
+.idea/modules.xml
+.idea/workspace.xml
+.idea/gradle.xml
+.idea/usage.statistics.xml
+.idea/dictionaries/
+.idea/httpRequests/

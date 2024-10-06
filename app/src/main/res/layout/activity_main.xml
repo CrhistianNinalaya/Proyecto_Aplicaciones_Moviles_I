@@ -29,9 +29,8 @@
         android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_BottomOf="parent"
-        android:layout_marginTop="100sp"
-        app:layout_constraintTop_toBottomOf="@id/lblNombre">
+        app:layout_constraintTop_toBottomOf="@id/lblNombre"
+        android:layout_marginTop="100sp">
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnProducto"
         android:layout_width="wrap_content"
