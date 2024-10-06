@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.example.proyecto_aplicaciones_moviles_i"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.proyecto_aplicaciones_moviles_i"
@@ -45,4 +45,5 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    implementation(kotlin("script-runtime"))
 }
