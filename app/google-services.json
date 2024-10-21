@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "954647522991",
+    "project_id": "proyectoappsmobilesdanara",
+    "storage_bucket": "proyectoappsmobilesdanara.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:954647522991:android:519e474d3bd66f9f7f6e5a",
+        "android_client_info": {
+          "package_name": "com.example.proyecto_aplicaciones_moviles_i"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpRpxqt6Q_9K-XOlGxALjSE6uZaSjUGmA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
